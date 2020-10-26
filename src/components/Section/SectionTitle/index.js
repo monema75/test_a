@@ -4,13 +4,13 @@ import anime from 'animejs';
 import './style.scss';
 
 const animationEnter = {
-  translateY: ['20%', '0'],
+  translateY: ['-20%', '0'],
   rotateX: ['-20deg', '0deg'],
   rotateY: ['-20deg', '0deg'],
   opacity: [0, 1],
-  delay: (el, index) => index * 120,
-  easing: 'easeOutQuint',
-  duration: 800,
+  delay: (el, index) => index * 200,
+  easing: 'easeOutQuart',
+  duration: 900,
 };
 
 const animationExit = {
@@ -37,7 +37,7 @@ function SectionTitle({ title, state }) {
     let timeline = anime.timeline();
 
     if (state === 'entered') {
-      const timelineDelay = 100;
+      const timelineDelay = 400;
 
       timeline
         .add({
