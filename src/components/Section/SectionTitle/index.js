@@ -37,7 +37,7 @@ function SectionTitle({ title, state }) {
     let timeline = anime.timeline();
 
     if (state === 'entered') {
-      const timelineDelay = 400;
+      const timelineDelay = 200;
 
       timeline
         .add({
