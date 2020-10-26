@@ -1,0 +1,26 @@
+.Stepper {
+  position: absolute;
+  right: 147px;
+  bottom: 30px;
+  display: flex;
+  justify-content: stretch;
+  width: 47%;
+  height: 6px;
+
+  .step {
+    height: 2px;
+    background-color: #444;
+    flex-grow: 1;
+    margin: 0 10px;
+    transition: height ease-out 0.3s, color ease-out 0.5s;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--active {
+      height: 5px;
+      filter: contrast(1.5) brightness(1.1);
+    }
+  }
+}

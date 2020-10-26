@@ -1,0 +1,34 @@
+.sectionTitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: 160px;
+  font-family: "Tungsten";
+  font-weight: 800;
+
+  svg {
+    position: absolute;
+    top: 30%;
+    right: 0;
+  }
+
+  &__line {
+    opacity: 0;
+  }
+
+  &__outline {
+    fill: transparent;
+    paint-order: stroke;
+    stroke: var(--title-font-color);
+    stroke-width: 1px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+  }
+
+  &__fill {
+    fill: var(--title-font-color);
+  }
+}

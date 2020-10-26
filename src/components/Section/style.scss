@@ -1,0 +1,49 @@
+.section {
+  width: 33.3%;
+  position: absolute;
+  transform-origin: top center;
+  line-height: 0;
+
+  &__title {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    font-size: 30px;
+    left: -50%;
+  }
+
+  &--next {
+    cursor: pointer;
+    z-index: 10;
+    img {
+      left: calc(100% - 33vw) !important;
+    }
+  }
+
+  &--current {
+    img {
+      transition: clip-path ease-in-out 0.5s;
+      clip-path: circle(100% at 35% 35%);
+    }
+  }
+
+  &--prev {
+    cursor: pointer;
+    z-index: 10;
+    img {
+      transition: clip-path ease-in-out 0.5s;
+      clip-path: circle(40% at center center);
+    }
+  }
+
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 80vh;
+    margin: 0 auto;
+    transform-origin: top left;
+  }
+}

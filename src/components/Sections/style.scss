@@ -1,0 +1,29 @@
+.sections {
+  height: 100vh;
+  position: relative;
+  user-select: none;
+  overflow: hidden;
+  user-select: none;
+  perspective: 800px;
+  perspective-origin: center;
+
+  &__details {
+    position: absolute;
+    right: 147px;
+    bottom: 200px;
+    text-align: right;
+    font-size: 12px;
+
+    .sections__date {
+      margin-top: 30px;
+    }
+
+    .sections__action {
+      margin-top: 50px;
+    }
+  }
+
+  &__detail {
+    opacity: 0;
+  }
+}

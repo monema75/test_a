@@ -1,0 +1,16 @@
+@import "./Typography.scss";
+
+:root {
+  --main-bg-color: #222020;
+  --main-font-color: #fff;
+  --title-font-color: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+  font-family: "Roboto";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

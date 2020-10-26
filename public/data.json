@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "title": "Everyday\r\nflowers",
+      "pic": "./img/oladimeji-odunsi-1159755.jpg",
+      "date": "July 2019",
+      "credit": "Lucas Viperti",
+      "company": "Vogue UK Magazine",
+      "color": "#694D41",
+      "link": "pageToLoad"
+    },
+    {
+      "title": "The Wilder\r\nNight",
+      "pic": "./img/pamela-lima-640060.jpg",
+      "date": "January 2019",
+      "credit": "Carol Smith",
+      "company": "Elle decór",
+      "color": "#4B593F",
+      "link": "pageToLoad"
+    },
+    {
+      "title": "Smooth\r\nMemories",
+      "pic": "./img/kevin-laminto-Wac13Oopo34.jpg",
+      "date": "November 2018",
+      "credit": "Andrea Schiavone",
+      "company": "Harpers Bazaar",
+      "color": "#987F5F",
+      "link": "pageToLoad"
+    },
+    {
+      "title": "Future\r\nInverse",
+      "pic": "./img/azamat-zhanisov-1350194.jpg",
+      "date": "October 2018",
+      "credit": "Maria Grazia Cirri",
+      "company": "Vogue UK Magazine",
+      "color": "#C9B2AB",
+      "link": "pageToLoad"
+    },
+    {
+      "title": "Born\r\nUrban",
+      "pic": "./img/nicole-honeywill-759045.jpg",
+      "date": "July 2018",
+      "credit": "Giorgia Mentana",
+      "company": "Grazia Magazine",
+      "color": "#7C514B",
+      "link": "pageToLoad"
+    }
+  ]
+}
