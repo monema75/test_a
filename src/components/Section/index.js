@@ -20,11 +20,14 @@ function Section({
   onClick = () => { } }) {
   let sectionRef = useRef(React.createRef());
   let previousPosition = useRef(sectionStatus.HIDDEN);
+  let animation = useRef();
 
   const movePosition = useCallback((from, to) => {
     let finalProps = sectionAnimations[from][to];
 
-    anime({
+    if (animation.current) animation.current.pause();
+
+    animation.current = anime({
       targets: sectionRef.current,
       ...finalProps,
     });

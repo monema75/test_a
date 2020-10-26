@@ -5,12 +5,12 @@ export default {
     'current': {
       keyframes: [
         {
-          rotateY: '8deg',
-          rotateX: '2deg',
+          rotateY: '-10deg',
+          rotateX: '-8deg',
           translateY: '66%',
-          duration: 200,
-          opacity: .3,
-          easing: 'easeInCubic',
+          duration: 300,
+          opacity: .1,
+          easing: 'easeInSine',
         },
         {
           translateX: '100%',
@@ -19,21 +19,10 @@ export default {
           rotateY: '0deg',
           opacity: 1,
           scale: 1,
-          easing: 'easeOutElastic(1, .5)',
-          duration: 3000,
+          easing: 'easeOutElastic(1, .8)',
+          duration: 1800,
         }
       ]
-    },
-    'next': {
-      translateX: ['200%', '200%'],
-      translateY: ['0%', '0%'],
-      rotateY: ['44deg', '0deg'],
-      rotateX: ['4deg', '0deg'],
-      opacity: [0, INACTIVE_OPACITY],
-      scale: [0.4, 0.5],
-      duration: 3000,
-      easing: 'easeOutElastic(1, .6)',
-      delay: 300,
     },
   },
   'current': {
@@ -52,8 +41,8 @@ export default {
           rotateX: '0deg',
           opacity: INACTIVE_OPACITY,
           scale: 0.7,
-          easing: 'easeOutElastic(1, .5)',
-          duration: 3000,
+          easing: 'easeOutElastic(1, .8)',
+          duration: 1800,
         }
       ]
     },
@@ -72,8 +61,8 @@ export default {
           rotateX: '0deg',
           opacity: INACTIVE_OPACITY,
           scale: 0.5,
-          easing: 'easeOutElastic(1, .5)',
-          duration: 3000,
+          easing: 'easeOutElastic(1, .8)',
+          duration: 1800,
         }
       ]
     },
@@ -82,12 +71,12 @@ export default {
     'current': {
       keyframes: [
         {
-          rotateY: '8deg',
-          rotateX: '2deg',
+          rotateY: '10deg',
+          rotateX: '8deg',
           translateY: '3%',
-          duration: 200,
-          opacity: .3,
-          easing: 'easeInCubic',
+          duration: 300,
+          opacity: .1,
+          easing: 'easeInSine',
         },
         {
           translateX: '100%',
@@ -96,22 +85,11 @@ export default {
           rotateY: '0deg',
           opacity: 1,
           scale: 1,
-          easing: 'easeOutElastic(1, .5)',
-          duration: 3000,
+          easing: 'easeOutElastic(1, .8)',
+          duration: 1800,
         }
       ]
     },
-    'prev': {
-      translateX: ['-15%', '-15%'],
-      translateY: ['63%', '63%'],
-      rotateY: ['-34deg', '0deg'],
-      rotateX: ['-4deg', '0deg'],
-      opacity: [0, INACTIVE_OPACITY],
-      scale: [0.4, 0.7],
-      easing: 'easeOutElastic(1, .6)',
-      duration: 3400,
-      delay: 300,
-    }
   },
   'hidden': {
     'prev': {
@@ -121,8 +99,8 @@ export default {
       rotateX: ['-4deg', '0deg'],
       opacity: [0, INACTIVE_OPACITY],
       scale: [0.4, 0.7],
-      easing: 'easeOutElastic(1, .6)',
-      duration: 3400,
+      easing: 'easeOutElastic(1, .8)',
+      duration: 1800,
       delay: 300,
     },
     'current': {
@@ -131,7 +109,7 @@ export default {
       rotateY: ['-54deg', '0deg'],
       opacity: [0, 1],
       scale: [.7, 1],
-      easing: 'easeOutElastic(1, .6)',
+      easing: 'easeOutElastic(1, .8)',
       duration: 3000,
     },
     'next': {
@@ -141,8 +119,8 @@ export default {
       rotateX: ['4deg', '0deg'],
       opacity: [0, INACTIVE_OPACITY],
       scale: [0.4, 0.5],
-      duration: 3400,
-      easing: 'easeOutElastic(1, .6)',
+      duration: 1800,
+      easing: 'easeOutElastic(1, .8)',
       delay: 300,
     },
   },

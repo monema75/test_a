@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Transition, TransitionGroup } from "react-transition-group";
-import anime from "animejs";
+import { Transition, TransitionGroup } from 'react-transition-group';
+import anime from 'animejs';
 
-import Background from "../Background";
-import Stepper from "../Stepper";
+import Background from '../Background';
+import Stepper from '../Stepper';
 import Section, { sectionStatus } from '../Section';
 import GoLink from '../GoLink';
 
@@ -84,16 +84,15 @@ function Sections({ items, onSectionSelected = () => { } }) {
   useEffect(() => {
     setSections(items);
 
-    let details = sectionsRef.current.querySelectorAll('.sections__details div');
+    let details = sectionsRef.current.querySelectorAll('.sections__details > div');
 
     anime({
       targets: details,
       translateY: ['50px', '0'],
-      rotateY: ['-15deg', '0deg'],
       opacity: [0, 1],
-      easing: 'easeOutElastic(1, .5)',
-      delay: anime.stagger(100),
-      duration: 2500,
+      easing: 'easeOutElastic(1, .6)',
+      delay: anime.stagger(120),
+      duration: 1800,
     });
 
   }, [activeSectionID, items]);
@@ -107,7 +106,7 @@ function Sections({ items, onSectionSelected = () => { } }) {
         {getRenderedItems()}
       </TransitionGroup>
 
-      <div className="sections__details" style={{ perspective: 100 }}>
+      <div className="sections__details" style={{ perspective: 100, transformOrigin: 'left' }}>
         <div className="sections__credit">{items[activeSectionID].credit} for</div>
         <div className="sections__company">{items[activeSectionID].company}</div>
         <div className="sections__date">{items[activeSectionID].date}</div>
