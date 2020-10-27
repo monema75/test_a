@@ -70,7 +70,7 @@ function SectionTitle({ title, state }) {
 
     let lines = title.split('\r\n');
     return lines.map((line, index) => {
-      let yPos = 220 + 150 * index;
+      let yPos = 150 + 150 * index;
 
       return (
         <g key={index}
